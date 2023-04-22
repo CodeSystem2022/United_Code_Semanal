@@ -1,9 +1,0 @@
-Programamos con diferentes tipos de archivos, ahora en .txt
-Los acentos son importantes para las palabras
-Como por ejemplo: acción, ejecución y producción
-Agregamos otra línea
-Con esto terminamos.Programamos con diferentes tipos de archivos, ahora en .txt
-Los acentos son importantes para las palabras
-Como por ejemplo: acción, ejecución y producción
-Agregamos otra línea
-Con esto terminamos.
