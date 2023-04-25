@@ -1,0 +1,1 @@
+Scrum Master semana 4: Rodrigo Garayalde Borges
