@@ -1,0 +1,1 @@
+Scrum master semana 03: Rodrigo Garayalde Borges
