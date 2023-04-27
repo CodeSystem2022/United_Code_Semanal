@@ -22,8 +22,8 @@
 
 | **Semana** | 💡 **Scrum Master** 💡    |
 |----------------------|----------------------|
-|  1  | *-* |*Lopez, Debora Katerine*
-|  2  | *-* |*Cabrera, Angel Gabriel*
+|  1  | *Lopez, Debora Katerine* |
+|  2  | *Cabrera, Angel Gabriel* |
 |  3  | *-* |
 |  4  | *Rodrigo Garayalde Borges* |
 
