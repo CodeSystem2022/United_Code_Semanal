@@ -14,3 +14,8 @@ cursor = conexion.cursor()
 sentencia = 'SELECT * FROM persona'
 cursor.execute(sentencia)  # De esta manera ejecutamos la sentencia
 registros = cursor.fetchall()  # Recuperamos todos los registros que seran una lista
+
+print(registros)
+
+cursor.close()
+conexion.close()
