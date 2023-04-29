@@ -1,3 +1,3 @@
-Scrum Master semana 1: López Katherine D.
-semana 03/04/2023 al  09/04/2023  
 
+
+![Agregar texto (1)](https://user-images.githubusercontent.com/69828273/235275189-5b0c14aa-f2bf-4cab-a5bf-0fd128e9dbc0.png)
