@@ -1,3 +1,12 @@
+
+
+persona.apellida = 'Betancud'//Cambiamos dinamicamente el valor de un objeto
+delete persona.apellida;//Eliminamos el error
+console.log(persona);
+
+
+
+
 //Nro 3: la función Object.values(), regresa nuestro objeto como un arreglo
 console.log("Distintas formas de imprimir un objeto: forma 3");
 let personaArray = Object.values(persona);
