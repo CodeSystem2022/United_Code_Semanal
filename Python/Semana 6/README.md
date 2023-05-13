@@ -1,0 +1,1 @@
+Agregar en esta carpeta los ejercicios de la semana N°6 de Python
