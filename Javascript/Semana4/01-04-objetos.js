@@ -18,6 +18,14 @@ console.log(persona.apellido);
 console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
+console.log(persona.nombreCompleto());
+console.log("Ejecutando con un objeto");
+
+let persona2 = new Object(); //Debe crear un nuevo objeto en memoria
+persona2.nombre = 'Juan';
+persona2.direccion = 'Salada 14';
+persona2.telefono = '5491122334455';
+console.log(persona2.telefono);
 
 console.log('Cambiamos y eliminamos un error');
 persona.apellido = 'Betancud'//Cambiamos dinamicamente el valor de un objeto
