@@ -1,7 +1,27 @@
+let x = 10; //variable de tipo primitiva
+console.log(x.length);
+
+console.log("Tipos primitivos");
+//Objeto
+let persona = {
+    nombre: 'Carlos',
+    apellido: 'Jay',
+    email: 'cjay@gmail.com',
+    edad: 30,
+    nombreCompleto: function() { //Método o función en JavaScript
+        return this.apellido + " " + this.nombre;
+    }
+}
+
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.email);
+console.log(persona.edad);
+console.log(persona);
 
 console.log('Cambiamos y eliminamos un error');
-persona.apellida = 'Betancud'//Cambiamos dinamicamente el valor de un objeto
-delete persona.apellida;//Eliminamos el error
+persona.apellido = 'Betancud'//Cambiamos dinamicamente el valor de un objeto
+delete persona.apellido;//Eliminamos el error
 console.log(persona);
 
 
