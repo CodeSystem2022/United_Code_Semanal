@@ -26,13 +26,31 @@ persona2.nombre = 'Juan';
 persona2.direccion = 'Salada 14';
 persona2.telefono = '5491122334455';
 console.log(persona2.telefono);
+console.log("Creamos un nuevo objeto");
 
-console.log('Cambiamos y eliminamos un error');
-persona.apellido = 'Betancud'//Cambiamos dinamicamente el valor de un objeto
-delete persona.apellido;//Eliminamos el error
+console.log(persona['apellido']); //Accedemos como si fuera un arreglo
+console.log("Usamos el ciclo for in");
+
+//for in => accedemos al objeto como si fuera un arreglo
+for(propiedad in persona) {
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
+
+console.log("Cambiamos y eliminamos un error");
+persona.apellida = 'Perez'; //Cambiamos dinámicamente un valor del objeto
+delete persona.apellida; //Eliminamos el error
 console.log(persona);
 
+//Número 1: La más sencilla, concatenar cada valor de cada propiedad
+console.log("Distintas formas de imprimir un objeto: forma 1");
+console.log(persona.nombre + ', ' + persona.apellido);
 
+//Número 2: A través del ciclo for in
+console.log("Distintas formas de imprimir un objeto: forma 2");
+for (const nombrePropiedad in persona) {
+    console.log(persona[nombrePropiedad]);
+}
 
 //Distinta formas de imprimir un objeto
 
