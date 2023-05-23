@@ -9,6 +9,7 @@ console.log(madre.telefono);
 madre.telefono = '543132116541';
 console.log(madre.telefono);
 
+
 // Uso de call
 let persona4 = {
     nombre: "Javier",
@@ -25,6 +26,8 @@ let persona5 = {
 
 console.log(persona4.nombreCompleto2("Dr.", "123456789"));
 console.log(persona4.nombreCompleto2.call(persona5,"Ing.", "789654123" ));
+
+
 
 
 let x = 10; //variable de tipo primitiva
