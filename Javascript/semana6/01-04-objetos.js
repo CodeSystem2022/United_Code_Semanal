@@ -39,7 +39,14 @@ let persona = {
     nombre: 'Carlos',
     apellido: 'Jay',
     email: 'cjay@gmail.com',
-    edad: 30,
+    edad:28,
+    idioma:'es',
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang(lang){
+         this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function() { //Método o función en JavaScript
         return this.apellido + " " + this.nombre;
     },
@@ -99,8 +106,10 @@ console.log("Distintas formas de imprimir un objeto: forma 4");
 let personaString = JSON.stringify(persona); //convierte cada objeto en una cadena, asi se puede imprimir sin ningún problema
 console.log(personaString); 
 
-console.log("Comenzamos a utilizar el metodo get");
-console.log(persona.nombreEdad);
+console.log("comenzamos a utilizar el metodo get y set para idioma");
+persona.lang = 'en';
+console.log(persona.lang);
+
 
 //Diferentes formas de crear objetos
 //caso número 1
