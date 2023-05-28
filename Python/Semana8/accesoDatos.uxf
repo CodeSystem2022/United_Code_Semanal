@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>110</y><w>860</w><h>700</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>80</y><w>100</w><h>30</h></coordinates><panel_attributes>acceso_datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>160</y><w>230</w><h>260</h></coordinates><panel_attributes>conexion
+--
+_-DATABASE: String_
+_-USERNAME: String_
+_-PASSWORD: String_
+_-DB PORT: String_
+_-HOST: String_
+_-conexion: connection_
+_-cursor: Cursor_
+--
+_+obtenerConexion(cls): Connection_
+_+obtenerCursor(cls): Cursor_
+_+cerrar(cls)_
+--
+Responsabilidades:
+Administrar la conexión a la base 
+de datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>500</y><w>230</w><h>260</h></coordinates><panel_attributes>PersonaDao
+--
+_-SELECCIONAR: String_
+_-INSERTAR: String_
+_-ACTUALIZAR: String_
+_-ELIMINAR: String_
+--
+_+seleccionar(cls)_
+_+insertar(cls, persona)_
+_+actualizar(cls, persona)_
+_+eliminar(cls, persona)_
+--
+Responsabilidades:
+Realizar las operaciones sobre la 
+base de datos de la entidad
+Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>160</y><w>230</w><h>200</h></coordinates><panel_attributes>Persona
+--
+-id_persona: int
+-nombre: String
+-apellido: String
+-email: String
+--
++__str__(): String
++metodo Get/Set de cada atributo
+--
+Responsabilidades:
+Crear objetos de la entidad de
+Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>410</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>620</y><w>380</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>360;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>350</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element></diagram>
