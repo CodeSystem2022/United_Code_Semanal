@@ -17,6 +17,9 @@ class Persona{
     set apellido(apellido){
         this._apellido= apellido;
     } 
+    nombreCompleto(){
+        return this._nombre + '  ' + this._apellido;;
+    }
 
 
      //Sobreescribiendo el metodo de la clase padre (Object)
@@ -52,6 +55,9 @@ persona2.apellido='Pietro'
 console.log(persona2.apellido);
 //console.log(persona1);
 
+let empleado1 =new Empleado('Maria', 'Gomes', 'Sistemas');
+console.log(empleado1);
+console.log(empleado1.nombreCompleto());
 
 
 //Object.prototype.toString --> de esta manera accedemos a atributos y metodos de manera dinamica
