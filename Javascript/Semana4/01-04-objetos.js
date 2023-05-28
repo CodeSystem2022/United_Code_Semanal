@@ -19,3 +19,14 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto()); 
+
+
+
+
+
+
+
+//Metodo Apply
+let arreglo= ['Ing.', '2341234']
+console.log(persona4.nombreCompleto2.apply(persona5));
+
