@@ -30,9 +30,28 @@ class Persona{
 
 }
 
+<<<<<<< Updated upstream
+let persona1 = new Persona('Martín','Perez');
+=======
+class Empleado extends Persona{ // Clase Hija
+    constructor(nombre, apellido, departamento){
+        super(nombre, apellido);
+        this._departamento = departamento;
+    }
+
+    get departamento(){
+        return this._departamento;
+    }
+
+    set departamento(departamento){
+        this._departamento = departamento;
+    }
+}
+
 let persona1 = new Persona('Martin', 'Perez');
 console.log(persona1.nombre)
 persona1.nombre='jopo'
+>>>>>>> Stashed changes
 console.log(persona1.nombre);
 //console.log(persona1);
 
@@ -40,12 +59,9 @@ console.log(persona1.nombre);
 console.log(persona1.apellido)
 persona1.apellido='Paulista'
 console.log(persona1.apellido);
-
-
-
-let persona2 = new Persona('Mario', 'Archundia');
-console.log(persona2.nombre)
-persona2.nombre = 'Maria Laura';
+//console.log(persona1);
+<<<<<<< Updated upstream
+let persona2 = new Persona('Carlos','Lara');
 console.log(persona2.nombre);
 //console.log(persona2);
 
@@ -53,9 +69,10 @@ console.log(persona2.nombre);
 console.log(persona2.apellido)
 persona2.apellido='Pietro'
 console.log(persona2.apellido);
-//console.log(persona1);
+//console.log(persona2);
+=======
 
-let empleado1 =new Empleado('Maria', 'Gomes', 'Sistemas');
+let empleado1 = new Empleado('Maria', 'Gomes', 'Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombreCompleto());
 
@@ -63,3 +80,4 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString --> de esta manera accedemos a atributos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
+>>>>>>> Stashed changes
