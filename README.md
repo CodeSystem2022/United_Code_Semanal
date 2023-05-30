@@ -29,7 +29,7 @@
 |  5  | *Degastaldi, Fernanda*|
 |  6  | *Olea, Maria Eugenia* |
 |  7  | *Moya, Walter Maximiliano* |
-|  8  | *Cabrera, Angel Gabriel* |
+|  8  | *Cruzate, Luciano* |
 |  9  | *Degastaldi Fernanda* |
 
 
