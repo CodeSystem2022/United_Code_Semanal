@@ -110,6 +110,16 @@ console.log("comenzamos a utilizar el metodo get y set para idioma");
 persona.lang = 'en';
 console.log(persona.lang);
 
+function Persona3(nombre,apellido,email){//constructor
+    this.nombre = nombre;
+    this.apellida = apellido;
+    this.email = email;
+}
+let padre = new Persona3('Leo','Lopez','lopezl@gmail.com')
+padre.nombre = 'Luis';
+console.log(padre);
+let madre = new Persona3('Laura','Contrera','contreral@gmail.com')
+console.log(madre);
 
 //Diferentes formas de crear objetos
 //caso número 1
