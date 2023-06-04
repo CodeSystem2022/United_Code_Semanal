@@ -22,5 +22,4 @@ public class TestExcepciones {
         }
         System.out.println("La variable de resultado tiene como valor: " + resultado);
     }
-
 }
