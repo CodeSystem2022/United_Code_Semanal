@@ -3,14 +3,12 @@ package test;
 
 import domain.*;
 
-
 public class TestInstanceOf {
     public static void main(String[] args){
         Empleado empleado1 = new Empleado("Juan", 10000);
-        determinarTipo(empleado1);
+        //determinarTipo(empleado1);
         empleado1 = new Gerente("Jose", 5000, "Sistemas");
         determinarTipo(empleado1);
-      
     }
     public static void determinarTipo(Empleado empleado){
        if(empleado instanceof Gerente){
