@@ -24,8 +24,8 @@ class Conexion:
             except Exception as e:
                 log.error(f'Ocurrio un error: {e}')
                 sys.exit()
-            else:
-                return cls._conexion
+        else:
+            return cls._conexion
 
 
 
@@ -40,8 +40,8 @@ class Conexion:
             except Exception as e:
                 log.error(f'ocurrio un  error: {e}')
                 sys.exit()
-            else:
-                  return cls._cursor
+        else:
+            return cls._cursor
 
 if __name__ == '__main__':
         conexion.obtenerConexion()
