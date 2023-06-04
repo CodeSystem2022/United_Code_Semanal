@@ -27,12 +27,6 @@ class Persona{
         return this.nombreCompleto(); //se aplica el polimorfismo: multiples formas en tiempo de ejecucion
         // El metodo que se ejecuta depende si es una REFERENCIA de tipo padre o hija
     }
-    static saludar(){
-        console.log('Saludos desde este método static');
-    }
-    static saludar2(persona){
-        console.log(persona.nombre);
-    }
 
 }
 
@@ -86,7 +80,4 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString --> de esta manera accedemos a atributos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
-//persona1.saludar();   no se utiliza desde el objeto, si se utiliza desde la clase
-Persona.saludar();
-Persona.saludar2(persona1);
 >>>>>>> Stashed changes
