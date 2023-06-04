@@ -27,7 +27,7 @@ class Conexion:
             else:
                 return cls._conexion
 
-        
+
 
 # Metodo de obtener cursor
     @classmethod
