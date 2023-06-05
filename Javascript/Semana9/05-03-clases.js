@@ -99,3 +99,8 @@ console.log(Empleado.contadorObjetosPersona);
 console.log(persona1.email);
 console.log(empleado1.email);
 //console.log(Persona.email); no se puede acceder desde la clase.
+
+//inicio video parte 6
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
