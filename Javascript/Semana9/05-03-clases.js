@@ -1,7 +1,13 @@
 //let persona3 = new Persona('Carla', 'Ponce'); esto no se debe hacer: Persona is not defined
 class Persona{
-
+    
+    static get MAX_OBJ(){//Este metodo simula una constante
+        return 5;
+    }
 static contadorObjetosPersona = 0;//Atributo estatico
+static get MAX_OBJ(){//Este metodo simula una constante
+    return 5;
+}
 email = 'Valor default email';//Atributo no estatico
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -99,3 +105,15 @@ console.log(Empleado.contadorObjetosPersona);
 console.log(persona1.email);
 console.log(empleado1.email);
 //console.log(Persona.email); no se puede acceder desde la clase.
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);
+
+console.log(Persona.MAX_OBJ);
+//Persona.MAX_OBJ = 10;//No se puede modificar
+console.log(Persona.MAX_OBJ);
+
+let persona4 = new Persona('Franco','Diaz');
+console.log(persona4.toString());
+
+let persona5 = new Persona('Liliana','Paz');
+console.log(persona5.toString);
