@@ -1,8 +1,13 @@
-public class CalculadoraUTN{
+import java.util.Scanner;
+
+public class CalculadoraUTN {
     public static void main(String[] args) {
-        System.out.println("****** Aplicación Calculadora ******");
-        var operando1 = 20;
-        var operando2 = 30;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("************** Aplicacion Calculadora**************");
+        System.out.print("Digite el valor para el operando1: ");
+        var operando1 = Integer.parseInt(entrada.nextLine());
+        System.out.print("Digite el valor para el operando2: ");
+        var operando2 = Integer.parseInt(entrada.nextLine());
         var resultado = operando1 + operando2;
         System.out.println("resultado = " + resultado);
     }
