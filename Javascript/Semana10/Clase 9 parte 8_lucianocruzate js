@@ -1,0 +1,6 @@
+// Prueba clase Cliente:
+let cliente1 = new Cliente('Ramiro', 'Juliani', 29, new Date());
+console.log(cliente1.toString());
+
+let cliente2 = new Cliente('Natalia', 'Corleone', 22, new Date());
+console.log(cliente2.toString());
