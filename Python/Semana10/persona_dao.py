@@ -30,8 +30,23 @@ class PersonaDAO:
                     persona = Persona(registro[0],registro[1],registro[2],registro[3])
                     personas.append(persona)
                 return personas
+
+    @classmethod
+    def actualizar(cls, persona):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+                cursor.execute(cls._ACTUALIZAR, valores)
+                log.debug(f"Persona Actualizada: {persona}")
+                return cursor.rowcount
                     
 if __name__ == '__main__':
+
+    # Actualizar un registro
+    # persona1 = Persona(1, 'juan Jose', 'Pena', 'jjpena@mail.com')
+    # personas_actualizadas = PersonaDAO.actualizar(persona1)
+    # log.debug(f"Personas Actualizadas: {personas_actualizadas}")
+
     personas = PersonaDAO.seleccionar()
     for persona in personas:
         log.debug(persona)
