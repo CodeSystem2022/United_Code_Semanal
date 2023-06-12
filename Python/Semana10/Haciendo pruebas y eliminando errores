@@ -31,13 +31,13 @@ class PersonaDAO:
                 return cursor.rowcount
 
     @classmethod
-        def eliminar(cls,persona):
-            with Conexion.obtenerConexion():
-                with Conexion.obtenerCursor() as cursor:
-                    valores = (persona.nombre, persona.apellido, persona.email)
-                    cursor.execute(cls._ELIMINAR, valores)
-                    log.debug(f'Los objetos eliminados son: {persona}')
-                    return cursor.rowcount
+    def actualizar(cls, persona):
+        with Conexion.obtenerConexion():
+            with Conexion.obtenerCursor() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+                cursor.execute(cls._ACTUALIZAR, valores)
+                log.debug(f'Persona actualizada: {persona}')
+                return cursor.rowcount
 
     @classmethod
     def eliminar(cls,persona):
@@ -55,10 +55,12 @@ if _name_ == '_main_':
     #personas_actualizadas = PersonaDAO.actualizar(persona1)
     #log.debug(f'Personas actualizadas: {personas_actualizadas}')
 
-    # Eliminar un registro
-    #persona1 = Persona(id_persona=13)
-    #personas_eliminadas = PersonaDAO.eliminar(persona1)
+    #Eliminar un registro
+    # persona1=Persona(id_persona=9)
+    # personas_eliminadas = PersonaDAO.eliminar(persona1)
     #log.debug(f'Personas eliminadas: {personas_eliminadas}')
+
+
 
      # Insertar un registro
      #persona1 = Persona(nombre='Pedro', apellido='Romero', email='promero@gmail.com')
