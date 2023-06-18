@@ -27,6 +27,11 @@ class conexion:
         if cls._pool is None:
             try:
                 cls._pool = pool.SimpleConnectionPool()
+                return cls._pool
 
 if __name__=='__main__':
-    pass
+    conexion1 = Conexion.obtenerConexion()
+    conexion2 = Conexion.obtenerConexion()
+    conexion3 = Conexion.obtenerConexion()
+    conexion4 = Conexion.obtenerConexion()
+    conexion5 = Conexion.obtenerConexion()
