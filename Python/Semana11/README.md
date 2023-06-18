@@ -1,0 +1,1 @@
+Scrum Master: Nicolás Aparicio 
