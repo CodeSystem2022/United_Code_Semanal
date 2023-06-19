@@ -13,7 +13,6 @@ class conexion:
     _MAX_CON = 5
     _pool = None
 
-
     @classmethod
     def obtenerConexion(cls):
         conexion = cls.obtenerPool().getconn()
@@ -23,7 +22,6 @@ class conexion:
     @classmethod
     def obtenerCursor(cls):
         pass
-
     @classmethod
     def obtenerPool(cls):
         if cls._pool is None:
