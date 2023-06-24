@@ -17,7 +17,7 @@
 | **Olea, María Eugenia** |
 | **Cruzate, Luciano** |
 | **Moya, Walter Maximiliano** |
-| **Garay, Jorge Ruben Sebastian** |
+
   
 
 | **Semana** | 💡 **Scrum Master** 💡    |
