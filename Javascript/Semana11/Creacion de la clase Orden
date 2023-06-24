@@ -1,0 +1,24 @@
+class Orden{
+    static contadorOrdenes = 0;
+    static get_MAX_PRODUCTOS(){ // Simula una constante
+        return 5;
+    }
+
+    constructor(){
+        this._idOrden = ++Orden.contadorOrdenes;
+        this._productos = [];
+        this._contadorProductosAgregados = 0;
+    }
+
+    get idOrden(){
+        return this._idOrden;
+    }
+
+    agregarProducto(producto){
+        if(this._productos.length < Orden.get_MAX_PRODUCTOS){
+            this._productos.push(producto); // Tenemos 2 tipos de sintaxis: 1
+            //this ._productos [this ._contadorProductosAgregados++] = producto; // segunda sintaxis
+        }else{
+            console.log('No se pueden agregar más productos');
+        }
+    } // Fin del método agregarProducto
