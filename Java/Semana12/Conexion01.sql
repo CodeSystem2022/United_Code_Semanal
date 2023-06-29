@@ -9,3 +9,7 @@ UPDATE estudiantes2023 SET nombre="Enzo", apellido="Astrada" WHERE idestudiantes
 -- Delete(eliminar)
 
 
+
+DELETE FROM estudiantes2023 WHERE idestudiantes2023=5;
+-- Para modificar el idestuduante2023 y comience en 1
+ALTER TABLE estudiantes2023 AUTO_INCREMENT = 1;
