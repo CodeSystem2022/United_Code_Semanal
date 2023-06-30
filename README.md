@@ -34,6 +34,7 @@
 |  10  | *Aparicio Nicolás* |
 |  11  | *Aparicio Nicolás* |
 |  12 | *Lopez Debora Katerine* |
+|  13 | *Lopez Debora Katerine* |
 
 
 <br> ![motion-grafic](https://user-images.githubusercontent.com/69828273/232174796-797d2ac4-2b09-4353-a18e-762930d92002.gif)
